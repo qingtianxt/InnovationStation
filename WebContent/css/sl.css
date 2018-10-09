@@ -1,0 +1,189 @@
+body{
+	background-color: #ddf2fc;
+}
+
+.required:BEFORE{
+	content:"*";
+	color:red;
+}
+.alert{
+		background-color:rgba(176,77,45,0.5);
+		font-size:18px;
+		margin:15px;
+		padding:20px 35px;
+		border-radius: 8px;
+		box-shadow: 0px 0px 5px #ff80001907755;
+	}
+table{
+	border-collapse: collapse;
+	
+}
+table td,table th{
+/* 	border: 1px black solid; */
+/* 	text-align:center; */
+}
+
+/* 显示查询结果的table */
+.result-table{
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.result-table td{
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.result-table td,.result-table th{
+	border: 1px gray solid;
+	text-align:center;
+}
+
+.result-table tr:NTH-CHILD(odd){
+	background-color: rgb(255,255,255);
+}
+.result-table tr:NTH-CHILD(even){
+	background-color: rgb(247,247,247);
+}
+.result-table tr:FIRST-CHILD,.result-table tr:LAST-CHILD{
+	background-color: #d3eaef;
+}
+.result-table tr:hover{
+	background-color: rgb(213,244,254);
+}
+.result-table tr:FIRST-CHILD:hover,.result-table tr:LAST-CHILD:hover{
+	background-color: #d3eaef;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* 添加信息的table */
+.form-table{
+	width:800px;
+	margin:auto;
+	border-collapse: collapse;
+	table-layout: fixed;
+	empty-cells: show;
+	border:1px gray solid;
+}
+.form-table caption{
+	font-size:xx-large;
+	margin:10px;
+	padding:10px;
+}
+.form-table td{
+	border:1px gray solid;
+/* 	margin:5px; */
+	padding:5px;
+}
+/* 输入项标签栏单元格 */
+.label{
+	text-align:center;
+	vertical-align: top;
+	font-weight: bold;
+}
+/* 输入内容栏单元格 */
+.input{
+	vertical-align: top;
+	overflow: hidden;
+}
+.input input,.label label {
+	font-size: 16px;
+	padding:5px 5px 2px;
+}
+.input input[type='text'],.input input[type='password'],
+.input input[type='date'],.input input[type='datetime'],
+.input input[type='tel'],.input input[type='email'],
+.input input[type='search'],.input input[type='url'],
+.input select{
+	width:100%;
+	box-sizing: border-box;
+	padding:3px;
+}
+.input select{
+	font-size: large;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.table {
+	border-collapse:collapse;  
+	width:800px;
+	margin:auto;
+/* 	border:1px gray solid; */
+	empty-cells: show;
+}
+
+.table tr {
+	
+}
+
+.table tr td {
+/* 	text-align: center; */
+	height: 30px;
+	padding:5px 10px;
+	border:1px gray solid;
+}
+/* .table tr td:FIRST-CHILD{ */
+/* 	text-align: left; */
+/* } */
+.title{
+	text-align: right;
+	font-weight: 600;
+}
+
+.table tr td input[type='button'] {
+	padding:5px 10px;
+	margin:3px 10px;
+	background-color: rgba(255,255,255,0);
+	border:0;
+	font-size: 16px;
+}
+.table caption {
+	font-size:xx-large;
+	margin:10px;
+	padding:10px;
+}
+input[type='button'],input[type='submit'],button{
+	cursor: pointer;
+}
+.query-table{
+	min-width: 80%;
+	table-layout: fixed;
+	margin-bottom: 10px;
+}
+.query-table td{
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding:3px;
+	text-align:right;
+}
+
+
+table.query-table input[type='text'], table.query-table select{
+	width:100%;
+	box-sizing: border-box;
+	padding:3px;
+}
+
+
+/*位置导航栏*/
+.nav-ul{
+	display: inline-block;
+	margin:5px 0;
+	padding:0px;
+	font-size: 0;
+}
+.nav-li{
+	display: inline-block;
+	margin:0px;
+	font-size:15px; 
+}
+.nav-li+.nav-li:BEFORE{
+	content: ">>"
+}
+.nav-li a{
+	color:blue;
+	text-decoration: none;
+}

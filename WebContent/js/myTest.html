@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.border{
+		border:1px black solid;
+	}
+</style>
+<script type="text/javascript" src="jquery-1.12.1.js"></script>
+<script type="text/javascript" src="myFrame.js"></script>
+<script type="text/javascript">
+function fun(){
+	var dialog = getModalDialog();
+	dialog.css("background-color","green");
+	var $btn = $("<button>关闭</button>");
+	$btn.appendTo(dialog.footer);
+	dialog.content.load("../back/technology_supply/add_supply.jsp");
+	$btn.click(function(){
+		dialog.close();
+	})
+	dialog.title.addClass("border");
+	dialog.content.addClass("border");
+	dialog.footer.addClass("border");
+}
+</script>
+</head>
+<body>
+	<p>
+		
+我们班上有位同学叫李维昊，她有一双明亮的眼睛，一张长长的脸，还有一条辫子。
+她的同桌贺挺，数学成绩很不理想。无奈，数学老师只好把教贺挺这个艰巨的任务交给李维昊。
+我们每次都为她着急，但她却不急，她耐心教：乘法，小数乘法，分数乘法。直到满意为止。
+一次次，贺挺面对着复杂的数学公式和成堆的数学题，都会摇摇头放弃。但李维昊并不生气，只是一遍又一遍的教着贺挺，没抱怨一句。为了让贺挺快点进步，他不辞辛苦，拿出宝贵的课余时间来教贺挺。
+别人一次次的说她不值得：“花出宝贵的时间教贺挺这个笨蛋。”她却一言不发，默默的教贺挺。贺挺在李维昊的教导下，越来越进步。
+贺挺能有今天，多亏了李维昊。我们应该学习李维昊的乐于助人的精神。
+	</p>
+	<button onclick="fun()">显示</button>
+</body>
+</html>

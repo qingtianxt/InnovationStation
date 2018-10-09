@@ -1,0 +1,105 @@
+@CHARSET "UTF-8";
+
+ul,li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+p {
+	margin-top: 0px;
+	margin-bottom: 2px;
+	font-size: 12px;
+	line-height: 24px;
+}
+
+a {
+	color: #06C;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.diyi {
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+.diyi_left {
+	width: 350px;
+	margin: 5px 0;
+	overflow: hidden;
+	border: #CCC solid 1px;
+	float: left;
+	height: 200px;
+}
+
+.zq {
+	width: 460px;
+	margin: 10px auto;
+	overflow: hidden;
+	line-height: 24px;
+	color: #666;
+}
+
+.zq ul li {
+	font-size: 8px;
+	line-height: 33px;
+	border-bottom: dashed 1px #CCC;  /* 下边的点点线 */
+	background: url(images/list.gif) no-repeat 0px 15px;
+	padding-left: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.zq ul li a {
+	color: #666;
+}
+
+.zq ul li span {
+	font-size: 12px;
+}
+
+.zq ul li a:hover {
+	text-decoration: underline;
+}
+
+.diyi_center{
+	width: 350px;
+	margin: 5px 0;
+	overflow: hidden;
+	border: #CCC solid 1px;
+	float: left;
+	height: 200px;
+}
+
+.news {
+	width: 460px;
+	margin: 10px auto;
+	overflow: hidden;
+	line-height: 24px;
+	color: #666;
+}
+
+.news ul li {
+	font-size: 8px;
+	line-height: 33px;
+	border-bottom: dashed 1px #CCC;  /* 下边的点点线 */
+	background: url(images/list.gif) no-repeat 0px 15px;
+	padding-left: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.news ul li a {
+	color: #666;
+}
+
+.news ul li span {
+	font-size: 20px;
+}
+
+.news ul li a:hover {
+	text-decoration: underline;
+}

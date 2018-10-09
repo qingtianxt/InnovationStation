@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script type="text/javascript" src="jquery-1.12.1.js"></script>
+<script type="text/javascript" src="jquery.validate.js"></script>
+<style>
+div{
+/*  border: solid 1px black; */
+}
+.input-group{
+	margin:0;
+	padding:0 10px;
+}
+.title{
+	float:left;
+	width:25%;
+}
+.content{
+	float:left;
+	width:75%;
+}
+.content input{
+	width:100%;overflow: hidden;
+	margin-bottom: 
+}
+.clear{
+	clear:both;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("form").validate({
+		rules:{
+			username:{required:true},
+			pwd:{required:true}
+		},
+		messages:{
+			username:{required:"请输入用户名"},
+			pwd:{required:"请输入密码"}
+		},
+		errorPlacement:function(error,element){
+			error.css("color","red");
+			error.insertAfter(element);
+		}
+	})
+})
+</script>
+</head>
+<body>
+<div>
+<form action="">
+<div class="input-group">
+	<div class="title"><label for="username">用户名</label></div>
+	<div class="content"><input type="text" name="username" ></div>
+	<div class="clear"></div>
+</div>
+<div class="input-group">
+	<div class="title"><label for="pwd">密码</label></div>
+	<div class="content"><input type="text" name="pwd" ></div>
+	<div class="clear"></div>
+</div>
+<div class="input-group">
+	<div class="title"><label for="pwd">年龄</label></div>
+	<div class="content"><input type="number" name="age" max="120" min="1" step="1" size="5"pattern="^\d{0,3}$"></div>
+	<div class="clear"></div>
+</div>
+<div class="button-group">
+	<div><input type="submit" value="确定"></div>
+</div>
+</form>
+<input type='number' max='' min='1' id="number" style='width:35px' onkeypress='return fun()' onchange='page(1,this.value)'>
+</div>
+</body>
+<script type='text/javascript'>
+	function fun(e) {
+		var s;
+		if (window.event) {
+			s = String.fromCharCode(window.event.keyCode);
+		} else {
+			s = String.fromCharCode(e.keyCode);
+		}
+		var reg = /[0-9]/;
+		var f = reg.test(s);
+		return f;
+	}
+	
+	function page(currentPage, pageSize) {
+		url = "&currentPage=" + currentPage + "&pageSize=" + pageSize;
+		alert(url)
+	}
+</script>
+</html>

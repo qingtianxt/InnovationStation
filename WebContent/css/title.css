@@ -1,0 +1,173 @@
+/* CSS Document */
+ @CHARSET "UTF-8";
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-repeat: repeat-x;
+	background-color: #FFFFFF;
+	
+
+}
+
+.STYLE1 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+
+
+.STYLE2 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.STYLE3 {
+	color: #003366;
+	font-size: 12px;
+}
+
+.title {
+	font-size: 14px;
+	font-weight: bold;
+	position: relative;
+	top: 0px;
+	margin-left: 60px;
+	float: left;
+	width: 100%;
+	color: #FFFFF;
+}
+
+.title li {
+	display: inline-block;
+	float: left;
+	line-height: 20px;
+	color: #FFFFF;
+}
+
+.title>li>a {
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.title li:hover>a {
+	background: #fffff;
+	color: #ffffff;
+}
+
+ul,li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 12px;
+	line-height: 24px;
+}
+
+a {
+	color: #06C;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+
+
+.diyi_left {
+	width: 225px;
+	margin: 0px 0;
+	overflow: hidden;
+	border: #CCC solid 0px;    /*矩形框 0px没有     1px有矩形框*/
+	float: left;
+	height: 140px;
+}
+
+.zq {
+	width: 460px;
+	margin: 0px auto;  /*调节矩形框的大小*/
+	overflow: hidden;
+	line-height: 24px;
+	color: #666;
+}
+
+.zq ul li {
+	font-size: 8px;
+	line-height: 28px;  /*点点线距离矩形框上边界的距离*/
+ 	border-bottom: dashed 1px #CCC;    /*点点线 */
+	background: url(images/list.gif) no-repeat 0px 0px;
+	padding-left: 0px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.zq ul li a {
+	color: #666;
+}
+
+.zq ul li span {
+	font-size: 10px;
+	color: #06C;
+}
+
+.zq ul li a:hover {
+	text-decoration: underline;
+}
+
+
+
+.top_login {
+	background: #d1e8fe;
+	height: 40px;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 999999;
+}
+
+.login_in {
+	width: 1000px;
+	margin: 0px auto;
+	line-height: 40px;
+}
+
+.login_in a {
+	color: #000;
+}
+
+
+
+.yqlj table tr td a {
+	font-size: 14px
+}
+/* 未访问：蓝色、无下划线 */
+.yqlj table tr td a:link {
+	color: #000000;
+	text-decoration: none;
+}
+/* 激活：红色 */
+.yqlj table tr td a:active: {
+	color: red;
+}
+/* 已访问：purple、无下划线 */
+.yqlj table tr td a:visited {
+	color: purple;
+	text-decoration: none;
+}
+/* 鼠标移近：红色、下划线 */
+.yqlj table tr td a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+
+
